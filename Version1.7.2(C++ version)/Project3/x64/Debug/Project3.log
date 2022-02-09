@@ -1,0 +1,5 @@
+﻿  源.cpp
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(43,8): warning C4244: “初始化”: 从“unsigned __int64”转换到“int”，可能丢失数据
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(50,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(193,8): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(194,10): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

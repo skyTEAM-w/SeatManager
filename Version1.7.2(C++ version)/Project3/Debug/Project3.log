@@ -1,0 +1,11 @@
+﻿D:\Program Files (x86)\Visua Studio\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(Project3.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  源.cpp
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(43,8): warning C4244: “初始化”: 从“unsigned __int64”转换到“int”，可能丢失数据
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(50,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(51,11): warning C4244: “初始化”: 从“unsigned __int64”转换到“int”，可能丢失数据
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(192,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(193,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(219,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(220,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(237,6): warning C4101: “fd”: 未引用的局部变量
+D:\用户\吴承霈\Desktop\learn\test C++\Project3\Project3\源.cpp(210): warning C4715: “demain”: 不是所有的控件路径都返回值
