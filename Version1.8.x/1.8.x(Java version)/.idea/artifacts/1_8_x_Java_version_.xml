@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jpackage" name="1.8.x(Java version)">
+    <output-path>$PROJECT_DIR$/out/artifacts/1_8_x_Java_version_</output-path>
+    <root id="root">
+      <element id="archive" name="1_8_x_Java_version_.jar">
+        <element id="module-output" name="1.8.x(Java version)" />
+      </element>
+    </root>
+  </artifact>
+</component>
