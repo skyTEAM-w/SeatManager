@@ -1,5 +1,6 @@
 package com.seatmanager.version0;
 
+import java.awt.event.KeyEvent;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -7,16 +8,19 @@ import java.util.regex.Pattern;
 
 public class SeatManagerImp {
 
-    public static void showUI() {
+    private String[] tempTables;
+    private File file = new File(".\\");
+
+    public void showUI() {
         System.out.println("          座位表随机生成系统V1.8.0(Java version)");
         System.out.println("----------***********************************----------");
         System.out.println("V1.8.0 Java预览版：\n采用Java构建项目，\n采用了与v1.7.2(Cpp version)版本完全不同的算法");
-        System.out.println("文件的读入形式与上一版本相同");
+        System.out.println("文件的读入形式与上一版本相同,所有更改将在退出系统后应用。");
         System.out.println("----------***********************************----------");
         System.out.println("1.开始生成座位表\n2.查看已经生成的座位表\n3.清空所有的座位表\n0.退出系统");
     }
 
-    public static void creatTable() throws IOException {
+    public void creatTable() throws IOException {
         File file = new File(".\\读入文件.txt");
         if (!file.exists()) {
             System.out.println("文件不存在！");
@@ -63,7 +67,7 @@ public class SeatManagerImp {
                 seatTableBuilder.append("\n").append("♦");
             }
 
-            String[] tempTables = seatTableBuilder.toString().split("♦");
+            tempTables = seatTableBuilder.toString().split("♦");
 
             for (int i = 0; i < tempTables.length; i++) {
                 System.out.println("----------************第" + (i + 1) + "个表***********----------");
@@ -96,8 +100,7 @@ public class SeatManagerImp {
         }
     }
 
-    public static void showTable() throws IOException{
-        File file = new File(".\\");
+    public void showTable() throws IOException{
         File[] files = file.listFiles();
         String pattern = "seat_table*[0-9]\\.txt";
 
@@ -116,10 +119,48 @@ public class SeatManagerImp {
                     }
                 }
             }
+        } else if (tempTables != null){
+            int index = 0;
+            for (String table : tempTables) {
+                System.out.println("----------************第" + (index + 1) + "个表***********----------");
+                System.out.println(table);
+            }
+        } else {
+            System.out.println("无已生成的座位表！");
         }
+
+        BufferedReader consoleWait = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("输入'#'退出...");
+        while (!consoleWait.readLine().equals("#"));
     }
 
-    private static void saveTable(String[] tableList) throws IOException {
+    public void deleteTable(BufferedReader stdReader) throws IOException{
+        File[] files = file.listFiles();
+        String pattern = "seat_table*[0-9]\\.txt";
+        System.out.println("是否确定删除？\n1.是\n2.否");
+
+        switch (Integer.parseInt(stdReader.readLine())) {
+            case 1 -> {
+                if (files != null) {
+                    for (File f : files) {
+                        if (f.getName().matches(pattern)) {
+                            f.delete();
+                            System.out.println("已删除：" + f.getName());
+                        }
+                    }
+                    System.out.println("删除完成！");
+                }
+            }
+            case 2 -> {
+
+            }
+        }
+
+        System.out.println("输入’#‘退出...");
+        while (stdReader.readLine().equals("#"));
+    }
+
+    private void saveTable(String[] tableList) throws IOException {
         int index = 1;
         for (String table : tableList) {
             System.out.println("保存第" + index + "个文件");
@@ -132,7 +173,7 @@ public class SeatManagerImp {
         System.out.println("保存成功");
     }
 
-    private static void saveTable(String[] tableList, TreeSet<Integer> saveIndex) throws IOException {
+    private void saveTable(String[] tableList, TreeSet<Integer> saveIndex) throws IOException {
         int index = 1;
         for (Integer integer : saveIndex) {
             System.out.println("保存第" + index + "个文件");
