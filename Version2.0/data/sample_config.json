@@ -1,0 +1,121 @@
+{
+  "classroom": {
+    "rows": 8,
+    "cols": 6,
+    "aisleLayout": 1
+  },
+  "students": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "gender": "Male",
+      "className": "Class 1A"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "gender": "Female",
+      "className": "Class 1A"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "gender": "Male",
+      "className": "Class 1B"
+    },
+    {
+      "id": 4,
+      "name": "Alice Williams",
+      "gender": "Female",
+      "className": "Class 1B"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Brown",
+      "gender": "Male",
+      "className": "Class 2A"
+    },
+    {
+      "id": 6,
+      "name": "Diana Prince",
+      "gender": "Female",
+      "className": "Class 2A"
+    },
+    {
+      "id": 7,
+      "name": "Edward Norton",
+      "gender": "Male",
+      "className": "Class 2B"
+    },
+    {
+      "id": 8,
+      "name": "Fiona Green",
+      "gender": "Female",
+      "className": "Class 2B"
+    },
+    {
+      "id": 9,
+      "name": "George Hill",
+      "gender": "Male",
+      "className": "Class 3A"
+    },
+    {
+      "id": 10,
+      "name": "Hannah Baker",
+      "gender": "Female",
+      "className": "Class 3A"
+    }
+  ],
+  "assignments": [
+    {
+      "studentId": 1,
+      "row": 0,
+      "col": 0
+    },
+    {
+      "studentId": 2,
+      "row": 0,
+      "col": 1
+    },
+    {
+      "studentId": 3,
+      "row": 0,
+      "col": 2
+    },
+    {
+      "studentId": 4,
+      "row": 0,
+      "col": 4
+    },
+    {
+      "studentId": 5,
+      "row": 0,
+      "col": 5
+    },
+    {
+      "studentId": 6,
+      "row": 1,
+      "col": 0
+    },
+    {
+      "studentId": 7,
+      "row": 1,
+      "col": 1
+    },
+    {
+      "studentId": 8,
+      "row": 1,
+      "col": 2
+    },
+    {
+      "studentId": 9,
+      "row": 1,
+      "col": 4
+    },
+    {
+      "studentId": 10,
+      "row": 1,
+      "col": 5
+    }
+  ]
+}
