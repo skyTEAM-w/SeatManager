@@ -1,3 +1,0 @@
-D:/learn/SeatManager/build/CMakeFiles/1_8_0p_Cpp_version_.dir
-D:/learn/SeatManager/build/CMakeFiles/edit_cache.dir
-D:/learn/SeatManager/build/CMakeFiles/rebuild_cache.dir
